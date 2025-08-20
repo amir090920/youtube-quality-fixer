@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "هدية لأبو يوسف",
+  "name": "مثبت جودة يوتيوب",
   "version": "2.0.0",
-  "description": "تثبيت جودة يوتيوب",
+  "description": "إضافة متصفح تقوم بتثبيت جودة يوتيوب",
   
   "permissions": [
     "storage",
