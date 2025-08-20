@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مثبت جودة يوتيوب</h1>
+            <label class="power-switch">
+                <input type="checkbox" id="powerToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </header>
+
+        <!-- خيار أعلى جودة متاحة -->
+        <div class="highest-quality-option">
+            <label class="checkbox-large">
+                <input type="checkbox" id="highestQuality">
+                <span class="checkbox-custom"></span>
+                <span class="label-text">🔴 أعلى جودة متاحة</span>
+            </label>
+        </div>
+
+        <!-- قائمة الجودات -->
+        <div id="qualityList" class="quality-list">
+            <div class="quality-item" data-quality="144">144p</div>
+            <div class="quality-item" data-quality="240">240p</div>
+            <div class="quality-item" data-quality="360">360p</div>
+            <div class="quality-item" data-quality="480">480p</div>
+            <div class="quality-item" data-quality="720">720p</div>
+            <div class="quality-item" data-quality="1080">1080p</div>
+            <div class="quality-item" data-quality="2160">4K</div>
+            <div class="quality-item" data-quality="4320">8K</div>
+        </div>
+
+        <!-- خيارات إضافية -->
+        <div class="additional-options">
+            <label class="checkbox-option">
+                <input type="checkbox" id="premiumBitrate">
+                <span class="checkbox-custom"></span>
+                <span>تفعيل YouTube Premium Bitrate</span>
+            </label>
+            
+            <label class="checkbox-option">
+                <input type="checkbox" id="prefer60fps">
+                <span class="checkbox-custom"></span>
+                <span>تفضيل 60 FPS</span>
+            </label>
+            
+            <label class="checkbox-option">
+                <input type="checkbox" id="preferHDR">
+                <span class="checkbox-custom"></span>
+                <span>تفضيل HDR</span>
+            </label>
+        </div>
+
+        <div class="status-bar">
+            <span id="statusText">جاهز</span>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
